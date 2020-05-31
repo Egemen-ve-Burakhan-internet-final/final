@@ -1,0 +1,6 @@
+package ogr;
+
+public class Sorgular {
+	public static String insert = "INSERT INTO ogretmen_kayit VALUES(";
+	public static String select = "SELECT * FROM ogretmen_kayit";
+}

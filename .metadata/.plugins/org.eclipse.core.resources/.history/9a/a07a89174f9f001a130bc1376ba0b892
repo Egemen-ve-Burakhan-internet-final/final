@@ -1,0 +1,10 @@
+package ogr;
+
+public class Ogretmen {
+
+	private String unvan;
+	private String ad;
+	private String soyad;
+	private String ders;
+	
+}

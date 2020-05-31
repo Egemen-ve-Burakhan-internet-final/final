@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\Burakhan\Desktop\okul\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3713199081.index
+\okul\src
+C:\Users\Burakhan\Desktop\okul\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3257778943.index
+\ogretim\src
+C:\Users\ditto12\Desktop\internet_final\okul\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3257778943.index
+\ogretim\src

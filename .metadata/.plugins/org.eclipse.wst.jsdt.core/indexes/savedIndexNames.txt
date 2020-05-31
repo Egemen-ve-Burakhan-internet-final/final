@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\ditto12\Desktop\internet_final\final\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3806199646.index
+3709339599.index
+2707601810.index
+837731601.index
+1418363671.index

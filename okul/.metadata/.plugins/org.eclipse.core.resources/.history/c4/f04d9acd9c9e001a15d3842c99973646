@@ -1,0 +1,25 @@
+package ogretmen_kayit;
+
+import java.util.ArrayList;
+
+
+public class ogretmen_kayit {
+
+	private String unvan;
+	private String adi;
+	private String soyadi;
+	private String derssecim;
+	public String getUnvan() {
+		return unvan;
+	}
+	public void setUnvan(String unvan) {
+		this.unvan = unvan;
+	}
+	public String getAdi() {
+		return adi;
+	}
+	public void setAdi(String adi) {
+		this.adi = adi;
+	}
+	
+}

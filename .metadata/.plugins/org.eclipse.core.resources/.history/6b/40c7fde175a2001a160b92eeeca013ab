@@ -1,0 +1,229 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+   <%@ page import="java.sql.DriverManager"%>
+   <%@ page import="java.sql.ResultSet"%>
+   <%@ page import="java.sql.Statement"%>
+   <%@ page import="java.sql.Connection"%> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ana Sayfa</title>
+	</head>
+	<body>
+            <%
+                Connection connection = DriverManager.getConnection(
+                "jdbc:sqlserver://localhost:1433;databaseName=okuldb;integratedSecurity=true;");            
+            Statement statement1 = connection.createStatement();
+            Statement statement2 = connection.createStatement();
+            Statement statement3 = connection.createStatement();
+            Statement statement4 = connection.createStatement();
+            Statement statement5 = connection.createStatement();
+            Statement statement6 = connection.createStatement();
+            Statement statement7 = connection.createStatement();
+            Statement statement8 = connection.createStatement();
+            Statement statement9 = connection.createStatement();
+            Statement statement10 = connection.createStatement();
+            Statement statement11 = connection.createStatement();
+            Statement statement12 = connection.createStatement();
+                               
+            ResultSet resultset1 = statement1.executeQuery("select * from dersler where ders_id=1 and dolu =1");
+            ResultSet resultset2 = statement2.executeQuery("select * from dersler where ders_id=2 and dolu =1");
+            ResultSet resultset3 = statement3.executeQuery("select * from dersler where ders_id=3 and dolu =1");
+            ResultSet resultset4 = statement4.executeQuery("select * from dersler where ders_id=4 and dolu =1");
+            ResultSet resultset5 = statement5.executeQuery("select * from dersler where ders_id=5 and dolu =1");
+            ResultSet resultset6 = statement6.executeQuery("select * from dersler where ders_id=6 and dolu =1");
+            ResultSet resultset7 = statement7.executeQuery("select * from dersler where ders_id=7 and dolu =1");
+            ResultSet resultset8 = statement8.executeQuery("select * from dersler where ders_id=8 and dolu =1");
+            ResultSet resultset9 = statement9.executeQuery("select * from dersler where ders_id=9 and dolu =1");
+            ResultSet resultset10= statement10.executeQuery("select * from dersler where ders_id=10 and dolu =1");
+            ResultSet resultset11= statement11.executeQuery("select * from dersler where ders_id=11 and dolu =1");
+            ResultSet resultset12= statement12.executeQuery("select * from dersler where ders_id=12 and dolu =1");
+            
+            Statement statement13 = connection.createStatement();
+            Statement statement14 = connection.createStatement();
+            Statement statement15 = connection.createStatement();
+            Statement statement16 = connection.createStatement();
+            Statement statement17 = connection.createStatement();
+            Statement statement18 = connection.createStatement();
+            Statement statement19 = connection.createStatement();
+            Statement statement20 = connection.createStatement();
+            Statement statement21 = connection.createStatement();
+            Statement statement22 = connection.createStatement();
+            Statement statement23 = connection.createStatement();
+            Statement statement24 = connection.createStatement();
+            
+            ResultSet ogr1 = statement13.executeQuery("select * from ogretmen_kayit where ders_secim = 1");
+            ResultSet ogr2 = statement14.executeQuery("select * from ogretmen_kayit where ders_secim = 2");
+            ResultSet ogr3 = statement15.executeQuery("select * from ogretmen_kayit where ders_secim = 3");
+            ResultSet ogr4 = statement16.executeQuery("select * from ogretmen_kayit where ders_secim = 4");
+            ResultSet ogr5 = statement17.executeQuery("select * from ogretmen_kayit where ders_secim = 5");
+            ResultSet ogr6 = statement18.executeQuery("select * from ogretmen_kayit where ders_secim = 6");
+            ResultSet ogr7 = statement19.executeQuery("select * from ogretmen_kayit where ders_secim = 7");
+            ResultSet ogr8 = statement20.executeQuery("select * from ogretmen_kayit where ders_secim = 8");
+            ResultSet ogr9 = statement21.executeQuery("select * from ogretmen_kayit where ders_secim = 9");
+            ResultSet ogr10 = statement22.executeQuery("select * from ogretmen_kayit where ders_secim = 10");
+            ResultSet ogr11 = statement23.executeQuery("select * from ogretmen_kayit where ders_secim = 11");
+            ResultSet ogr12 = statement24.executeQuery("select * from ogretmen_kayit where ders_secim = 12");
+                                 
+            %>
+            
+		    <div>
+		    
+				<div>
+					<h1 style="text-align:center">Okul</h1>
+				</div>
+				
+				<div>
+					<table border=1px; width="80%" align= center>
+						<tr>
+							<td style="text-align:center"><a href="index.jsp">Anasayfa</a></td>
+							<td style="text-align:center"><a href="ogretmen_kayit.jsp">ÖĞretim Elemani Kayit Islemleri</a></td>
+						</tr>
+					</table>
+				</div>
+				
+				<div>
+		            
+					<table border = 1px; align = center width=80% style="text-align:center">
+					
+					  <tr>
+						<td>Saat</td>
+						<td>Pazartesi</td>
+						<td>Sali</td>
+						<td>Carsamba</td>
+						<td>Persembe</td>
+						<td>Cuma</td>
+						<td>Cumartesi</td>
+						<td>Pazar</td>
+					  </tr>								   		         
+			            <% while(resultset1.next()){ %>	
+			            <% while(resultset2.next()){ %>	
+			            <% while(resultset3.next()){ %>	
+			            <% while(resultset4.next()){ %>		
+			            <% while(resultset5.next()){ %>	
+			            <% while(resultset6.next()){ %>
+			            <% while(resultset7.next()){ %>
+			            <% while(resultset8.next()){ %>
+			            <% while(resultset9.next()){ %>	
+			            <% while(resultset10.next()){ %>	
+			            <% while(resultset11.next()){ %>	
+			            <% while(resultset12.next()){ %>
+			            
+			            <% while(ogr1.next()){ %>	
+			            <% while(ogr2.next()){ %>	
+			            <% while(ogr3.next()){ %>	
+			            <% while(ogr4.next()){ %>		
+			            <% while(ogr5.next()){ %>	
+			            <% while(ogr6.next()){ %>
+			            <% while(ogr7.next()){ %>
+			            <% while(ogr8.next()){ %>
+			            <% while(ogr9.next()){ %>	
+			            <% while(ogr10.next()){ %>	
+			            <% while(ogr11.next()){ %>	
+			            <% while(ogr12.next()){ %>			            		           
+			           <tr>
+			            	<td> 9:00 </td>
+			            	<td> <%= resultset1.getString("ders_adi") %> <br> (<%= ogr1.getString("ogretmen_unvan") %> <%= ogr1.getString("ogretmen_adi") %>) </td>       				            		             				             	           			            	
+			            	<td> <%= resultset5.getString("ders_adi") %> <br> (<%= ogr5.getString("ogretmen_unvan") %> <%= ogr5.getString("ogretmen_adi") %>) </td>   			            	   			               			                
+			                <td> <%= resultset9.getString("ders_adi") %> <br> (<%= ogr9.getString("ogretmen_unvan") %> <%= ogr9.getString("ogretmen_adi") %>) </td>
+			                <td> <%= resultset1.getString("ders_adi") %> <br> (<%= ogr1.getString("ogretmen_unvan") %> <%= ogr1.getString("ogretmen_adi") %>) </td>    
+			                <td> <%= resultset9.getString("ders_adi") %> <br> (<%= ogr9.getString("ogretmen_unvan") %> <%= ogr9.getString("ogretmen_adi") %>) </td>  			                			               		                
+			            				            				            				            				            				            				            				            				            	
+			           </tr>	
+			           			            			           
+			           <tr>
+			                <td> 10:00 </td>
+			            	<td> <%= resultset1.getString("ders_adi") %> <br> (<%= ogr1.getString("ogretmen_unvan") %> <%= ogr1.getString("ogretmen_adi") %>) </td>       				            		             				             	           			            	
+			            	<td> <%= resultset5.getString("ders_adi") %> <br> (<%= ogr5.getString("ogretmen_unvan") %> <%= ogr5.getString("ogretmen_adi") %>) </td>   			            	   			               			                
+			                <td> <%= resultset9.getString("ders_adi") %> <br> (<%= ogr9.getString("ogretmen_unvan") %> <%= ogr9.getString("ogretmen_adi") %>) </td>
+			                <td> <%= resultset1.getString("ders_adi") %> <br> (<%= ogr1.getString("ogretmen_unvan") %> <%= ogr1.getString("ogretmen_adi") %>) </td>    
+			                <td> <%= resultset9.getString("ders_adi") %> <br> (<%= ogr9.getString("ogretmen_unvan") %> <%= ogr9.getString("ogretmen_adi") %>) </td>  		            				            				            
+			           </tr>				          			            			            			            			      
+			           	           
+			           <tr>
+			            	<td> 11:00 </td>			            	
+			            	<td> <%= resultset2.getString("ders_adi") %> <br> (<%= ogr2.getString("ogretmen_unvan") %> <%= ogr2.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset6.getString("ders_adi") %> <br> (<%= ogr6.getString("ogretmen_unvan") %> <%= ogr6.getString("ogretmen_adi") %>) </td>
+                            <td> <%= resultset3.getString("ders_adi") %> <br> (<%= ogr3.getString("ogretmen_unvan") %> <%= ogr3.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset9.getString("ders_adi") %> <br> (<%= ogr9.getString("ogretmen_unvan") %> <%= ogr9.getString("ogretmen_adi") %>) </td>  
+			            	<td> <%= resultset6.getString("ders_adi") %> <br> (<%= ogr6.getString("ogretmen_unvan") %> <%= ogr6.getString("ogretmen_adi") %>) </td>
+			            	
+			           </tr>	
+			           <tr>
+			                <td> 11:55 </td>
+			            	<td> <%= resultset2.getString("ders_adi") %> <br> (<%= ogr2.getString("ogretmen_unvan") %> <%= ogr2.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset6.getString("ders_adi") %> <br> (<%= ogr6.getString("ogretmen_unvan") %> <%= ogr6.getString("ogretmen_adi") %>) </td>
+                            <td> <%= resultset3.getString("ders_adi") %> <br> (<%= ogr3.getString("ogretmen_unvan") %> <%= ogr3.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset9.getString("ders_adi") %> <br> (<%= ogr9.getString("ogretmen_unvan") %> <%= ogr9.getString("ogretmen_adi") %>) </td>  
+			            	<td> <%= resultset6.getString("ders_adi") %> <br> (<%= ogr6.getString("ogretmen_unvan") %> <%= ogr6.getString("ogretmen_adi") %>) </td>
+			           </tr>			           
+			           			           
+			           <tr>
+			                <td colspan = "6"> ÖĞLEN ARASI </td>			            	
+			           </tr>		
+			           			          	           
+			           <tr>
+			            	<td> 13:25 </td>
+			            	<td> <%= resultset3.getString("ders_adi") %> <br> (<%= ogr3.getString("ogretmen_unvan") %> <%= ogr3.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset8.getString("ders_adi") %> <br> (<%= ogr8.getString("ogretmen_unvan") %> <%= ogr8.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset8.getString("ders_adi") %> <br> (<%= ogr8.getString("ogretmen_unvan") %> <%= ogr8.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset11.getString("ders_adi") %> <br>(<%= ogr11.getString("ogretmen_unvan") %> <%= ogr11.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset1.getString("ders_adi") %> <br> (<%= ogr1.getString("ogretmen_unvan") %> <%= ogr1.getString("ogretmen_adi") %>) </td>
+			           </tr>	
+			           <tr>
+			                <td> 14:25 </td>
+			            	<td> <%= resultset3.getString("ders_adi") %> <br> (<%= ogr3.getString("ogretmen_unvan") %> <%= ogr3.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset8.getString("ders_adi") %> <br> (<%= ogr8.getString("ogretmen_unvan") %> <%= ogr8.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset8.getString("ders_adi") %> <br> (<%= ogr8.getString("ogretmen_unvan") %> <%= ogr8.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset11.getString("ders_adi") %> <br>(<%= ogr11.getString("ogretmen_unvan") %> <%= ogr11.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset1.getString("ders_adi") %> <br> (<%= ogr1.getString("ogretmen_unvan") %> <%= ogr1.getString("ogretmen_adi") %>) </td>		            	
+			           </tr>			           			           		           
+			                      
+			           <tr>
+			            	<td> 15:25 </td>
+			            	<td> <%= resultset4.getString("ders_adi") %> <br> (<%= ogr4.getString("ogretmen_unvan") %> <%= ogr4.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset2.getString("ders_adi") %> <br> (<%= ogr2.getString("ogretmen_unvan") %> <%= ogr2.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset7.getString("ders_adi") %> <br> (<%= ogr7.getString("ogretmen_unvan") %> <%= ogr7.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset12.getString("ders_adi") %> <br>(<%= ogr12.getString("ogretmen_unvan") %> <%= ogr12.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset7.getString("ders_adi") %> <br> (<%= ogr7.getString("ogretmen_unvan") %> <%= ogr7.getString("ogretmen_adi") %>) </td>
+			           </tr>	
+			           <tr>
+			                <td> 16:20 </td>
+			            	<td> <%= resultset4.getString("ders_adi") %> <br> (<%= ogr4.getString("ogretmen_unvan") %> <%= ogr4.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset2.getString("ders_adi") %> <br> (<%= ogr2.getString("ogretmen_unvan") %> <%= ogr2.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset7.getString("ders_adi") %> <br> (<%= ogr7.getString("ogretmen_unvan") %> <%= ogr7.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset10.getString("ders_adi") %> <br>(<%= ogr10.getString("ogretmen_unvan") %> <%= ogr10.getString("ogretmen_adi") %>) </td>
+			            	<td> <%= resultset7.getString("ders_adi") %> <br> (<%= ogr7.getString("ogretmen_unvan") %> <%= ogr7.getString("ogretmen_adi") %>) </td>
+			            	
+			           </tr>			           
+			        <% }
+			       	   }         
+			           } 
+			           }   
+			           }  
+			           }
+			           } 
+			           }
+			           }
+			           } 
+			           }
+			           }
+			          
+			           } 
+			       	   }           
+			           } 
+			           }   
+			           }   
+			           } 
+			           } 
+			           } 
+			           } 
+			           } 
+			           }
+			           } %>
+					</table>
+			    </div>
+				
+		    </div>
+    </body>
+</html>

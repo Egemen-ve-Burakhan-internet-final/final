@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<div>
+			<h1>Okul</h1>
+		</div>
+		
+		<div>
+			<div col-md-6></div>
+			<div col-md-6></div>
+		</div>
+		
+		<div>
+			<table border = 1px>
+				<tr>
+					<td>Saat</td>
+					<td>Pazartesi</td>
+					<td>Sali</td>
+					<td>Carsamba</td>
+					<td>Persembe</td>
+					<td>Cuma</td>
+					<td>Cumartesi</td>
+					<td>Pazar</td>
+				</tr>
+				<tr>
+					<td>saat</td>
+					<td>a</td>
+					<td>b</td>
+					<td>v</td>
+					<td>a</td>
+					<td>b</td>
+					<td>v</td>
+					<td>v</td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+</body>
+</html>

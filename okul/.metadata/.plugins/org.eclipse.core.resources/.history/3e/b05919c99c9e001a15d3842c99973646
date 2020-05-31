@@ -1,0 +1,13 @@
+package ogretmen_kayit;
+
+import java.util.ArrayList;
+
+
+public class ogretmen_kayit {
+
+	private String unvan;
+	private String adi;
+	private String soyadi;
+	private String derssecim;
+	
+}

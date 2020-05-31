@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\ditto12\Desktop\internet_final\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4113780597.index
+\Okulp\src
+C:\Users\ditto12\Desktop\internet_final\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1683386704.index
+\Otel_Otomasyon\src
+C:\Users\ditto12\Desktop\internet_final\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1436013943.index
+\Okul\src
+C:\Users\ditto12\Desktop\internet_final\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3713199081.index
+\okul\src
+C:\Users\ditto12\Desktop\internet_final\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3257778943.index
+\ogretim\src
+C:\Users\ditto12\Desktop\internet_final\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3159211338.index
+\ogretim\src

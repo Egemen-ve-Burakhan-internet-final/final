@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<div>
+			<h1 style="text-align:center">Ogretim Elemani Kayit Islemleri</h1>
+		</div>
+		<div>
+			<table border=1px; width="80%" align= center>
+				<tr>
+					<td style="text-align:center"><a href="index.jsp">Anasayfa               </a></td>
+					<td style="text-align:center"><a href="ogretmen_kayit.jsp">Ogretim Elemani Kayit Islemleri</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div>
+			<form>
+				
+			</form>
+		</div>
+		
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+package Servlet;
+
+import java.io.IOException;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ogr.Ogrkayit;
+import ogr.Ogretmen;
+
+
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
+
+
+/**
+ * Servlet implementation class Servlet
+ */
+@WebServlet("/Servlet")
+public class Servlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Servlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Ogretmen ogr = new Ogretmen(request);
+		Ogrkayit ogrkayit = new Ogrkayit();
+		int ret = 1;
+		try {
+			ret = ogrkayit.ogrkayit(ogr);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		System.out.println(ret);		
+		if(ret==1)
+		{
+		PrintWriter out = response.getWriter(); 
+		out.write("<html>"+
+		"<head><meta charset=\"UTF-8\"><title>baþarýlý</title>"+
+		"</head>"+ 
+		"<body>"+
+		"<center><h1>kayit basarili<h1></center>"+
+		"<div>\r\n" + 
+		"			<table border=1px; width=\"80%\" align= center>\r\n" + 
+		"				<tr>\r\n" + 
+		"					<td style=\"text-align:center\"><a href=\"index.jsp\">Anasayfa               </a></td>\r\n" + 
+		"					<td style=\"text-align:center\"><a href=\"ogretmen_kayit.jsp\">Ogretim Elemani Kayit Islemleri</a></td>\r\n" + 
+		"				</tr>\r\n" + 
+		"			</table>\r\n" + 
+		"		</div>"+
+		"</body></html>");
+		}
+		else if(ret==0)
+		{
+			PrintWriter out = response.getWriter(); 
+			out.write("<html>"+
+			"<head><meta charset=\"UTF-8\"><title>baþarýsýz</title>"+
+			"</head>"+ 
+			"<body>"+
+			"<center><h1>kayit basarisiz<h1></center>"+
+			"<div>\r\n" + 
+			"			<table border=1px; width=\"80%\" align= center>\r\n" + 
+			"				<tr>\r\n" + 
+			"					<td style=\"text-align:center\"><a href=\"index.jsp\">Anasayfa               </a></td>\r\n" + 
+			"					<td style=\"text-align:center\"><a href=\"ogretmen_kayit.jsp\">Ogretim Elemani Kayit Islemleri</a></td>\r\n" + 
+			"				</tr>\r\n" + 
+			"			</table>\r\n" + 
+			"		</div>"+
+			"</body></html>");
+		}
+		
+	}
+
+}

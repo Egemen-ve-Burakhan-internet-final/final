@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\ditto12\Desktop\internet_final\okul\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+383535751.index
+3308680829.index
+2909045892.index
+1418363671.index
+1664115356.index
+38005441.index
